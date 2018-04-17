@@ -1,0 +1,20 @@
+buildscript {
+    ext.kotlin_version = '1.2.31'
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+	repositories {
+	    jcenter()
+	}
+	ext {
+		applicationId = 'stan.reakt'
+		versionCode = 1804171423
+		versionName = "0.00.02"
+	}
+}
